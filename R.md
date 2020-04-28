@@ -92,6 +92,8 @@ na.omit(df)
 ```
 ```R
 ## Delete variable
+install.packages("ISLR")
+library(ISLR)
 df <- Hitters
 df[sample(1:nrow(df), 7), "Hits"] <- NA 
 df[sample(1:nrow(df), 9), "Runs"] <- NA
